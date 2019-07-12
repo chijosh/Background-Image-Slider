@@ -1,20 +1,37 @@
 :root {
-  --mainWhite: #f2fdff;
+  --mainWhite: #ccf6fd;
   --mainBlue: #3e92cc;
 }
+
 .max-height {
   min-height: 100vh;
 }
+
 body {
   background: var(--mainWhite);
 }
+
+.header {
+  font-family: Courgette;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: #004369;
+  text-align: center;
+  line-height: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: 0.5rem solid var(--mainBlue);
+  border-radius: 0.5rem;
+}
+
 .img-container {
   min-height: 60vh;
-  background: url("../img/contBcg-0.jpeg") center/cover fixed no-repeat;
+  background: url("../img/contBcg-0.jpg") center/cover fixed no-repeat;
   border: 0.5rem solid var(--mainBlue);
   border-radius: 0.5rem;
   position: relative;
 }
+
 @media screen and (min-width: 768px) {
   .img-container {
     min-height: 80vh;
@@ -31,11 +48,13 @@ body {
   border: 0.2rem solid var(--mainBlue);
   font-size: 1.2rem;
 }
+
 .btn-left:hover {
   border-color: var(--mainBlue);
   background: var(--mainWhite);
   color: var(--mainBlue) !important;
 }
+
 .btn-right {
   position: absolute;
   top: 50%;
@@ -46,6 +65,7 @@ body {
   transform: translate(50%, -50%);
   border: 0.2rem solid var(--mainBlue);
 }
+
 .btn-right:hover {
   border-color: var(--mainBlue);
   background: var(--mainWhite);
